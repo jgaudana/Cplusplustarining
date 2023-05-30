@@ -7,7 +7,7 @@ class car
 public :
 	int Release_year;
 	int car_speed;
-	string marker_of_car;
+	string customer;
 
 	void get_value()
 	{
@@ -16,7 +16,7 @@ public :
        cout << "enter car speed:\n "; 
        cin >> car_speed;
        cout << "enter marker of car:\n "; 
-       cin >> marker_of_car; 
+       cin >> customer; 
 	}
 	 
 	 void acclerate()
