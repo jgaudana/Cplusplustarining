@@ -14,32 +14,34 @@ public :
     marker_of_car= marker_of_car_rec;
     car_speed=car_speed_rec;
    }
-  display(marker_of_car_rec)
+   
+   void display(string marker_of_car_rec)
   {
     marker_of_car=marker_of_car_rec;
-    cout<<"marker_of_car"<<marker_of_car<<"\n";
+    cout<<"marker_of_car:"<<marker_of_car<<"\n";
   }
-  display(Release_year_rec)
+   void display(int Release_year_rec, int car_speed_rec)
   {
-    Release_year=Release_year_rec
-      cout<<"release_year"<<Release_year<<"\n";
-  }
-  display(car_speed_rec)
-  {
+    Release_year=Release_year_rec;
     car_speed=car_speed_rec;
-    cout<<"car_speed"<<car_speed<<"\n"
+      cout<<"release_year:"<<Release_year<<"\n";
+      cout<<"car_speed:"<<car_speed<<"\n";
   }
-  diplay()
+
+   void display()
   {
-    cout<<"marker_of_car"<<marker_of_car<<"\n";
-    cout<<"release_year"<<Release_year<<"\n";
-    cout<<"car_speed"<<car_speed<<"\n"
+    cout<<"marker_of_car:"<<marker_of_car<<"\n";
+    cout<<"release_year:"<<Release_year<<"\n";
+    cout<<"car_speed:"<<car_speed<<"\n";
   }
 };
 
 main()
 {
- car Honda();
- honda.display(); 
-   
-}
+ car Honda(1999,"honda");
+ Honda.display();
+ cout<<"after overload function"<<"\n";
+ Honda.display("Honda motor company");
+ Honda.display(2012,60);
+ Honda.display();
+ }
